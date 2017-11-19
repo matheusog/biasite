@@ -1,0 +1,54 @@
+ID: bia
+_schema-version: '2.0'
+version: 0.0.1
+
+modules:
+ - name: site-bia
+   type: siteentry
+   path: site
+   parameters:
+      memory: 64M
+   requires:
+    - name: sap-portal-services-host-bia
+    - name: portal-uaa-bia
+    - name: sapui5-provider
+      properties:
+         sapui5url: ~{url}
+
+
+ - name: site-content-bia
+   type: sitecontent
+   path: site-content
+   parameters:
+      memory: 32M
+   requires:
+    - name: sap-portal-services-client-bia
+    - name: portal-uaa-bia
+
+resources:
+ - name: sap-portal-services-host-bia
+   parameters:
+      config:
+         siteId: bia
+   type: com.sap.portal.site-host
+
+ - name: portal-uaa-bia
+   parameters:
+      service-plan: space
+   type: com.sap.xs.uaa
+
+
+ - name: sapui5-provider
+   parameters:
+      provider-id: com.sap.ui5.dist.sapui5-dist-xsa.XSAC_UI5_FESV3:sapui5_fesv3
+      version: '>=1.42.0'
+      provider-nid: mta
+   type: configuration
+
+
+ - name: sap-portal-services-client-bia
+   parameters:
+      config:
+         siteId: bia
+   type: com.sap.portal.site-content
+
