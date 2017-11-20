@@ -90,7 +90,6 @@
 				"tiles": [{
 					"id": "tile_apresentacaoLinha",
 					"title": "{{tile_apresentacaoLinha_title}}",
-					"subTitle": "{{tile_apresentacaoLinha_sub_title}}",
 					"icon": "sap-icon://product",
 					"target": {
 						"semanticObject": "ApresentacaoLinha",
@@ -102,7 +101,6 @@
 				}, {
 					"id": "tile_apresentacoes",
 					"title": "{{tile_apresentacoes_title}}",
-					"subTitle": "{{tile_apresentacoes_sub_title}}",
 					"icon": "sap-icon://add-product",
 					"target": {
 						"semanticObject": "Apresentacao",
@@ -114,7 +112,6 @@
 				}, {
 					"id": "tile_atualizacao",
 					"title": "{{tile_atualizacao_title}}",
-					"subTitle": "{{tile_atualizacao_sub_title}}",
 					"icon": "sap-icon://action-settings",
 					"target": {
 						"semanticObject": "Atualizacao",
@@ -138,7 +135,6 @@
 				}, {
 					"id": "tile_mercadoregra",
 					"title": "{{tile_mercadoregra_title}}",
-					"subTitle": "{{tile_mercadoregra_sub_title}}",
 					"icon": "sap-icon://retail-store",
 					"target": {
 						"semanticObject": "MercadoRegra",
