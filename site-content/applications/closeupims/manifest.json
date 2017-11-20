@@ -1,0 +1,40 @@
+{
+	"sap.app": {
+		"_version": "1.3.0",
+		"id": "closeupims",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{title}}",
+		"tags": {
+			"keywords": [
+
+			]
+		},
+		"crossNavigation": {
+			"inbounds": {
+				"CloseupImsListar": {
+					"semanticObject": "CloseupIms",
+					"action": "Listar",
+					"deviceTypes": {
+						"desktop": true,
+						"tablet": true,
+						"phone": true
+					}
+				}
+			},
+			"outbounds": {
+
+			}
+		}
+	},
+	"sap.ui": {
+		"_version": "1.3.0",
+		"technology": "UI5"
+	},
+	"sap.ui5": {
+		"componentName": "ache.bia.closeup_ims",
+		"_version": "1.2.0"
+	},
+	"sap.platform.cf": {
+		"uri": "https://sapui5.hana.ondemand.com/test-resources/sap/ushell/demoapps/AppPersSample2"
+	}
+}

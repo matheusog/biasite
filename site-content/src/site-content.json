@@ -8,7 +8,7 @@
 			"entityType": "site",
 			"description": "",
 			"i18n": "",
-			"title": "Fiori Launchpad Sample"
+			"title": "BIA - Fiori Launchpad"
 		},
 		"payload": {
 			"groupsOrder": [
@@ -27,23 +27,32 @@
 		}
 	},
 	"catalogs": {
-		"07889260-3021-4ef6-ba85-edd311738f9a": {
+		"all": {
 			"_version": "1.1",
 			"identification": {
-				"id": "07889260-3021-4ef6-ba85-edd311738f9a",
+				"id": "all",
 				"namespace": "",
-				"title": "{{sample_catalog_title}}",
-				"description": "{{sample_catalog_description}}",
+				"title": "{{catalog_all_title}}",
+				"description": "{{catalog_all_description}}",
 				"entityType": "catalog",
 				"i18n": "i18n/i18n.properties"
 			},
 			"payload": {
 				"appDescriptors": [{
 					"namespace": "",
-					"id": "6ef9cdd2-687e-11e6-8b77-86f30ca893d3"
+					"id": "apresentacaolinha"
 				}, {
 					"namespace": "",
-					"id": "73c3f80a-5245-4e6c-a51d-d9436b1cb530"
+					"id": "apresentacoes"
+				}, {
+					"namespace": "",
+					"id": "atualizacao"
+				}, {
+					"namespace": "",
+					"id": "closeupims"
+				}, {
+					"namespace": "",
+					"id": "mercadoregra"
 				}]
 			}
 		}
@@ -57,11 +66,11 @@
 				"entityType": "role"
 			},
 			"payload": {
-				"catalogs": [
-
-				],
+				"catalogs": [{
+					"id": "all"
+				}],
 				"groups": [{
-					"id": "5acadc20-687e-11e6-8b77-86f30ca893d3"
+					"id": "implemented"
 				}]
 			}
 		}
@@ -70,34 +79,70 @@
 
 	},
 	"groups": {
-		"5acadc20-687e-11e6-8b77-86f30ca893d3": {
+		"implemented": {
 			"identification": {
-				"id": "5acadc20-687e-11e6-8b77-86f30ca893d3",
+				"id": "implemented",
 				"i18n": "i18n/i18n.properties",
 				"namespace": "",
-				"title": "{{group_title}}"
+				"title": "{{group_implemented_title}}"
 			},
 			"payload": {
 				"tiles": [{
-					"id": "mySapTile",
-					"title": "{{sap_app_title}}",
-					"subTitle": "{{sap_app_sub_title}}",
-					"icon": "sap-icon://world",
+					"id": "tile_apresentacaoLinha",
+					"title": "{{tile_apresentacaoLinha_title}}",
+					"subTitle": "{{tile_apresentacaoLinha_sub_title}}",
+					"icon": "sap-icon://product",
 					"target": {
-						"semanticObject": "Sap",
-						"action": "show",
+						"semanticObject": "ApresentacaoLinha",
+						"action": "Associar",
 						"parameters": [
 
 						]
 					}
 				}, {
-					"id": "myUi5Tile",
-					"title": "{{sample_pers_app_title}}",
-					"subTitle": "{{sample_pers_app_sub_title}}",
-					"icon": "sap-icon://person-placeholder",
+					"id": "tile_apresentacoes",
+					"title": "{{tile_apresentacoes_title}}",
+					"subTitle": "{{tile_apresentacoes_sub_title}}",
+					"icon": "sap-icon://add-product",
 					"target": {
-						"semanticObject": "app",
-						"action": "show",
+						"semanticObject": "Apresentacao",
+						"action": "Gerenciar",
+						"parameters": [
+
+						]
+					}
+				}, {
+					"id": "tile_atualizacao",
+					"title": "{{tile_atualizacao_title}}",
+					"subTitle": "{{tile_atualizacao_sub_title}}",
+					"icon": "sap-icon://action-settings",
+					"target": {
+						"semanticObject": "Atualizacao",
+						"action": "Gerenciar",
+						"parameters": [
+
+						]
+					}
+				}, {
+					"id": "tile_closeupims",
+					"title": "{{tile_closeupims_title}}",
+					"subTitle": "{{tile_closeupims_sub_title}}",
+					"icon": "sap-icon://show",
+					"target": {
+						"semanticObject": "CloseupIms",
+						"action": "Listar",
+						"parameters": [
+
+						]
+					}
+				}, {
+					"id": "tile_mercadoregra",
+					"title": "{{tile_mercadoregra_title}}",
+					"subTitle": "{{tile_mercadoregra_sub_title}}",
+					"icon": "sap-icon://retail-store",
+					"target": {
+						"semanticObject": "MercadoRegra",
+						"action": "Gerenciar",
 						"parameters": [
 
 						]
