@@ -1,4 +1,7 @@
 {
-  "routes": [
-  ]
+	"routes": [{
+		"source": "/themes/(.*)",
+		"target": "$1",
+		"localDir": "themes"
+	}]
 }

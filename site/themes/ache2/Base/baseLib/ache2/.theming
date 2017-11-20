@@ -1,0 +1,57 @@
+{
+	"mVersionDependency": {
+		"Base.baseLib.sap_belize": "11.0.3",
+		"Base.baseLib": "11.0.3",
+		"Base": "11.0.3"
+	},
+	"sEntity": "Theme",
+	"sId": "ache2",
+	"sLabel": "Ache",
+	"sVendor": "ache",
+	"oExtends": "Base.baseLib.sap_belize",
+	"aFiles": [
+		"base",
+		"preview",
+		"custom"
+	],
+	"aBundled": [
+		"ache2--Contrast"
+	],
+	"sTextDirections": "LTR",
+	"sType": "STANDARD",
+	"sThemability": "PUBLIC",
+	"mData": {
+		"mThemeMasterState": {
+			"mSourceInfo": {
+				"sCreated": "2017-08-09T19:39:52.770Z",
+				"sLastModified": "2017-11-07T03:36:59.921Z",
+				"aVersionHistory": [
+					{
+						"sDate": "2017-11-07T03:36:59.404Z",
+						"mVersion": {
+							"UI5": "1.48.11",
+							"Base": "11.0.3",
+							"UR": "10.30.7.280262.0"
+						}
+					},
+					{
+						"sDate": "2017-08-09T19:39:52.770Z",
+						"mVersion": {
+							"UI5": "1.46.11",
+							"Base": "10.30.7.274797.0",
+							"UR": "10.30.7.274797.0"
+						}
+					}
+				]
+			},
+			"mBuildInfo": {
+				"sLastBuilt": "2017-11-07T03:37:21.476Z",
+				"mVersion": {
+					"UI5": "1.48.11",
+					"Base": "11.0.3",
+					"UR": "10.30.7.280262.0"
+				}
+			}
+		}
+	}
+}

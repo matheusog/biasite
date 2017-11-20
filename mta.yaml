@@ -1,6 +1,6 @@
 ID: bia
 _schema-version: '2.0'
-version: 0.0.3
+version: 0.0.4
 modules:
   - name: site-bia
     type: siteentry
