@@ -1,7 +1,6 @@
 {
 	"routes": [{
-		"source": "/themes/(.*)",
-		"target": "$1",
-		"localDir": "themes"
+		"source": "/resources/sap/(.*)/themes/(.*)",
+		"target": "themes/$2/UI2/sap/$1/themes/$2"
 	}]
 }
